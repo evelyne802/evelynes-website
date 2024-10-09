@@ -21,6 +21,8 @@
     "rxjs": "~7.8.0",
     "three": "^0.160.1",
     "tslib": "^2.3.0",
+    "typed-js": "^0.2.3",
+    "typed.js": "^2.1.0",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {

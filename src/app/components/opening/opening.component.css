@@ -1,0 +1,41 @@
+.background {
+    background-image: url('../../../assets/images/screen.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+    margin:-8px;
+    /* width: 100rem; */
+}
+
+.terminal-window {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    top: -33px;
+    left: -30px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 100;
+}
+
+.terminal {
+    background-color: black;
+    padding: 0 30px;
+    min-width: 70vw;
+    min-height: 35vh;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.typed-text {
+    font-size: 20px;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+}
+
