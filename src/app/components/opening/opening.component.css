@@ -16,8 +16,7 @@
     justify-content: flex-end;
     background-color: rgb(155 155 155);
     position: relative;
-    min-width: 800px;
-    max-width: 70vw;
+    width: 750px;
     height: 35px;
     top: -35px;
     left: -30px;
@@ -62,8 +61,7 @@
 .terminal {
     background-color: black;
     padding: 0 30px;
-    min-width: 800px;
-    max-width: 70vw;
+    width: 750px;
     min-height: 35vh;
     border-radius: 0px 0px 5px 5px;
     z-index: 1;
@@ -83,4 +81,17 @@
 
 .hover{
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .terminal {
+        min-width: 72vw;
+        max-width: 70vw;
+    }
+
+    .terminal-window {
+        min-width: 72vw;
+        max-width: 70vw;
+    }
 }
