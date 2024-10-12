@@ -7,14 +7,13 @@
     background-size: cover;
     height: 100vh;
     margin:-8px;
-    /* width: 100rem; */
 }
 
 .terminal-window {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgb(155 155 155);
+    background-color: rgb(46 46 46);
     position: relative;
     width: 750px;
     height: 35px;
@@ -27,13 +26,16 @@
     height: 35px;
     text-align: center;
     font-family: "Source Code Pro", monospace;
-    font-weight: 300;
     justify-content: center;
     align-items: center;
     display: flex;
-    cursor: pointer;
 }
 
+.tab-icons {
+    height: 13px;
+    cursor: pointer;
+
+}
 
 .square{
     font-size: 18px;
@@ -86,12 +88,10 @@
 
 @media screen and (max-width: 1000px) {
     .terminal {
-        min-width: 72vw;
-        max-width: 70vw;
+        width: 75vw;
     }
 
     .terminal-window {
-        min-width: 72vw;
-        max-width: 70vw;
+        width: 75vw;
     }
 }
