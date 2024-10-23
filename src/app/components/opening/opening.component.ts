@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
-import { MainComponent } from '../main/main.component';
 import Typed from 'typed.js';
 
 @Component({

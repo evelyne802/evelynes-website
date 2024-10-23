@@ -17,12 +17,19 @@ export class MainComponent {
     this.makeElementDraggable('courses-container');
     this.makeElementDraggable('experience-container');
 
+    var loadingVideo = document.querySelector('video');
+    loadingVideo!.muted = true;
+    loadingVideo!.play()
+
+
     let video = document.getElementById('progress-bar');
     let backdrop = document.getElementById('backdrop');
 
     video?.addEventListener('ended', function() {
       setTimeout(function() {
         video!.className = "hidden";
+      }, 10)
+      setTimeout(function() {
         backdrop!.className = "hidden";
       }, 300)
     })
