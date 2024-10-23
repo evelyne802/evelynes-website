@@ -1,11 +1,102 @@
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
+<body>
+    <div class="background">
+        <div id="self-container" class="container self" (click)="getToFront('self-container')">
+            <div class="content">
+                <div class="container-title">Profile</div>
+                <div class="profile-picture">   
+                    <img src="../../../assets/images/profile-picture.jpg">
+                </div>
+                <div class="profile-list">
+                    <div class="list-item bold">Name</div><div class="list-item">Evelyne Gluzman</div>
+                    <div class="list-item bold">Profession</div><div class="list-item">Web Developer</div>
+                    <div class="list-item bold">Resume</div><div class="list-item"><a class="link" href="../../../assets/files/resume.pdf">View Resume</a></div>
+                    <div class="list-item bold">Contact</div>
+                    <div class="list-item icons">
+                        <a href="https://github.com/evelyne802" target=”_blank”>
+                            <img class="icon" src="../../../assets/images/github-icon.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/evelyne-gluzman-280b72270/" target=”_blank”>
+                            <img class="icon" src="../../../assets/images/linkedin-icon.png">
+                        </a>
+                        <a href="mailto:linagluzman@gmail.com" target=”_blank”>
+                            <img class="icon" src="../../../assets/images/email-icon.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills-container" class="container skills" (click)="getToFront('skills-container')">
+            <div class="content">
+                <div class="container-title">Skills</div>
+                <div class="skills-list">
+                    <div class="list-item">Web Development</div>
+                    <div class="list-item">Communication</div>
+                    <div class="list-item">Agile Workflow</div>
+                    <div class="list-item">Teamwork</div>
+                    <div class="list-item">Business Intelligence</div>
+                </div>
+            </div>
+        </div>
+        <div id="languages-container" class="container languages" (click)="getToFront('languages-container')">
+            <div class="content">
+                <div class="container-title">Languages & Frameworks</div>
+                <div class="languages-list">
+                    <div class="list-item">TypeScript</div>
+                    <div class="list-item">JavaScript</div>
+                    <div class="list-item">Angular</div>
+                    <div class="list-item">HTML</div>
+                    <div class="list-item">CSS</div>
+                    <div class="list-item">NodeJs</div>
+                    <div class="list-item">SQL</div>
+                    <div class="list-item">Python</div>
+                </div>
+            </div>
+        </div>
+        <div id="location-container" class="container location" (click)="getToFront('location-container')">
+            <div class="content">
+                <div class="container-title">Location</div>
+                <img src="../../../assets/images/map.png">
+                <img class="location-animation" src="../../../assets/videos/loc-radar.gif">
+            </div>
+        </div>
+        <div id="courses-container" class="container courses" (click)="getToFront('courses-container')">
+            <div class="content">
+                <div class="container-title">Courses & Certifications</div>
+                <div class="courses-list">
+                    <div class="list-item">Data Analyst</div>
+                    <div class="list-item">IDF</div>
 
-<div class="background">
-    
+                    <div class="list-item">Database Design</div>
+                    <div class="list-item">IDF</div>
 
-    <!-- <video id="bgVideo" controls preload="true" class="background-video" autoplay loop muted>
-        <source src="../../../assets/videos/background.mp4" type="video/mp4"> 
-     </video> -->
-</div>
+                    <div class="list-item">Docker for beginners</div>
+                    <div class="list-item">Udemy</div>
+
+                    <div class="list-item">CSS - The Complete Guide</div>
+                    <div class="list-item">Udemy</div>
+
+                    <div class="list-item">JavaScript Algorithms and Data Structures</div>
+                    <div class="list-item">Udemy</div>
+                </div>
+            </div>
+        </div>
+        <div id="experience-container" class="container experience" (click)="getToFront('experience-container')">
+            <div class="content">
+                <div class="container-title">Experience</div>
+                <div class="experience-list">
+                    <div class="list-item">Full Stack Developer</div>
+                    <div class="list-item">IDF</div>
+                    <div class="list-item">2021-2023</div>
+
+                    <div class="list-item">Data Analyst</div>
+                    <div class="list-item">IDF</div>
+                    <div class="list-item">2020-2021</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

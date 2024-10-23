@@ -4,4 +4,5 @@ import { OpeningComponent } from './components/opening/opening.component';
 
 export const routes: Routes = [
     { 'path': '', component: OpeningComponent },
+    { 'path': 'profile', component: MainComponent },
 ];

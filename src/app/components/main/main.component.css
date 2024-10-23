@@ -1,6 +1,6 @@
 .background {
-    /* background: rgb(23, 23, 23); */
-    background: black;
+    /* background: url('../../../assets/images/board.jpg');*/
+     background-image: url('../../../assets/images/screen.jpg'); 
     height: 100%;
     width: 100%;
     position: absolute;
@@ -9,13 +9,180 @@
     top: 0;
 }
 
-.background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    /* min-width: 100%;
-    min-height: 100%; */
-    pointer-events: none;
-    background-color: cover;
-  }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #2b3f2c;
+    cursor: move;
+    z-index: 0;
+    animation: fadeIn 1s;
+}
+
+.container-title {
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #6f9c76;
+    width: 100%;
+    height: 2rem;
+    line-height: 1.8rem;
+    border-bottom: 0.5px solid #6f9c76;
+    padding: 0 8px;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 99%;
+    border: 0.5px solid #6f9c76;
+}
+
+.self {
+    width: 18rem;
+    height: 21.1rem;
+    top: 40vh;
+    left: 35vw;
+}
+
+.profile-picture {
+    height: 11rem;
+    width: 95%;
+    margin: 7px 0;
+    position: relative;
+    border: 0.5px solid #6f9c76;
+    margin-inline: auto;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-list {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 95%;
+    position: relative;
+    margin-inline: auto;
+}
+
+.list-item {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    color: #6f9c76;
+    border: 0.5px solid #6f9c76;
+    padding: 3px 10px;
+    font-size: 0.9rem;
+}
+
+.list-item a {
+    height: 15px;
+}
+
+.link {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 15px;
+    /* width: 15px; */
+    margin: 0 3px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.location {
+    width: 13rem;
+    height: 30rem;
+    top: 15vh;
+    left: 10vw;
+}
+
+.location img {
+    position: relative;
+    height: 28rem;
+}
+
+.location-animation {
+    position: absolute !important;
+    top: 165px !important;
+    left: 55px !important;
+    width: 50px;
+    height: 50px !important;
+}
+
+.skills {
+    width: 15rem;
+    height: 10.3rem;
+    top: 10vh;
+    left: 32vw;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.languages {
+    width: 15rem;
+    height: 15.2rem;
+    top: 62vh;
+    left: 64vw;
+}
+
+.languages-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.courses {
+    width: 20rem;
+    height: 14rem;
+    top: 7vh;
+    left: 60vw;
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 95%;
+    position: relative;
+    margin: 10px auto;
+}
+
+.experience {
+    width: 25rem;
+    height: 6.7rem;
+    top: 43vh;
+    left: 61vw;
+}
+
+.experience-list {
+    display: grid;
+    grid-template-columns: 60% 13% 27%;
+    width: 95%;
+    position: relative;
+    margin: 10px auto;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
