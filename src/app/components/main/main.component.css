@@ -1,6 +1,6 @@
 .background {
     /* background: url('../../../assets/images/board.jpg');*/
-     background-image: url('../../../assets/images/screen.jpg'); 
+    background-image: url('../../../assets/images/screen.jpg'); 
     height: 100%;
     width: 100%;
     position: absolute;
@@ -9,7 +9,43 @@
     top: 0;
 }
 
+/********* backdrop & loading bar *********/
+
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.loading-bar {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.loading-bar video {
+    height: 50px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+
+/********* shared container classes *********/
+
 .container {
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +53,7 @@
     background-color: #2b3f2c;
     cursor: move;
     z-index: 0;
-    animation: fadeIn 1s;
+    animation: fadeIn 1s forwards;
 }
 
 .container-title {
@@ -40,11 +76,36 @@
     border: 0.5px solid #6f9c76;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.list-item {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    color: #6f9c76;
+    border: 0.5px solid #6f9c76;
+    padding: 3px 10px;
+    font-size: 0.9rem;
+}
+
+.list-item a {
+    height: 15px;
+}
+
+.link {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.67);
+}
+
+/********* self container *********/
+
 .self {
     width: 18rem;
     height: 21.1rem;
     top: 40vh;
     left: 35vw;
+    animation-delay: 1s;
 }
 
 .profile-picture {
@@ -69,24 +130,6 @@
     margin-inline: auto;
 }
 
-.list-item {
-    font-family: "Source Code Pro", monospace;
-    font-weight: 400;
-    color: #6f9c76;
-    border: 0.5px solid #6f9c76;
-    padding: 3px 10px;
-    font-size: 0.9rem;
-}
-
-.list-item a {
-    height: 15px;
-}
-
-.link {
-    text-decoration: underline;
-    color: rgba(255, 255, 255, 0.67);
-}
-
 .icons {
     display: flex;
     align-items: center;
@@ -98,15 +141,14 @@
     margin: 0 3px;
 }
 
-.bold {
-    font-weight: bold;
-}
+/********* location container *********/
 
 .location {
     width: 13rem;
     height: 30rem;
     top: 15vh;
     left: 10vw;
+    animation-delay: 1.2s;
 }
 
 .location img {
@@ -122,11 +164,14 @@
     height: 50px !important;
 }
 
+/********* skills container *********/
+
 .skills {
     width: 15rem;
     height: 10.3rem;
     top: 10vh;
     left: 32vw;
+    animation-delay: 1.4s;
 }
 
 .skills-list {
@@ -136,11 +181,14 @@
     width: 100%;
 }
 
+/********* languages container *********/
+
 .languages {
     width: 15rem;
     height: 15.2rem;
     top: 62vh;
     left: 64vw;
+    animation-delay: 1.6s;
 }
 
 .languages-list {
@@ -150,11 +198,14 @@
     width: 100%;
 }
 
+/********* courses container *********/
+
 .courses {
     width: 20rem;
     height: 14rem;
     top: 7vh;
     left: 60vw;
+    animation-delay: 1.8s;
 }
 
 .courses-list {
@@ -165,11 +216,14 @@
     margin: 10px auto;
 }
 
+/********* experience container *********/
+
 .experience {
     width: 25rem;
     height: 6.7rem;
     top: 43vh;
     left: 61vw;
+    animation-delay: 2s;
 }
 
 .experience-list {

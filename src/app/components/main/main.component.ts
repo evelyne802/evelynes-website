@@ -16,6 +16,16 @@ export class MainComponent {
     this.makeElementDraggable('languages-container');
     this.makeElementDraggable('courses-container');
     this.makeElementDraggable('experience-container');
+
+    let video = document.getElementById('progress-bar');
+    let backdrop = document.getElementById('backdrop');
+
+    video?.addEventListener('ended', function() {
+      setTimeout(function() {
+        video!.className = "hidden";
+        backdrop!.className = "hidden";
+      }, 300)
+    })
   }
 
   makeElementDraggable(elementId: string){
