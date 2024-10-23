@@ -27,24 +27,16 @@ export class OpeningComponent {
       strings: ['Loading...'],
       typeSpeed: 10,
       backDelay: 1000,
-      startDelay: 8500,
+      startDelay: 8000,
       loop: false,
-      cursorChar: ''
+      cursorChar: '',
+      onComplete: () => { 
+        setTimeout( () =>{
+          this.router.navigate(['/profile'], { skipLocationChange: true });
+        }, 1000);
+       },
     });
-    // this.router.navigate(['/profile'], { skipLocationChange: true });
-    //setTimeout(this.changePath, 10000);
-    setTimeout(this.changePath, 10000);
-  }
-
-
-  changePath(){
-    console.log('blabla');
-    console.log(this.location.path);
-    //this.location.go(this.location.path);
-    this.router.navigate(['/profile'], { skipLocationChange: true });
   }
 }
-
-
 
 
