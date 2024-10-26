@@ -32,7 +32,7 @@ export class OpeningComponent {
       onComplete: () => { 
         setTimeout( () =>{
           this.router.navigate(['/profile'], { skipLocationChange: true });
-        }, 1000);
+        }, 900);
        },
     });
   }
