@@ -343,7 +343,7 @@
 
 @media screen and (max-width: 550px) {
     .background {
-        background-image: url('../../../assets/images/mobile-screen-3.png'); 
+        background-image: url('../../../assets/images/s-screen.png'); 
         display: flex;
         height: fit-content;
         flex-wrap: wrap;
@@ -377,7 +377,7 @@
         height: 18rem;
         top: 0;
         left: 0;
-        margin: 7px;
+        margin: 10px;
     }
 
     .location img {
@@ -441,7 +441,7 @@
     }
 
     .audio {
-        width: 26rem;
+        width: 25rem;
         right: 0;
         top:0;
     }
@@ -451,6 +451,36 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
+    .location {
+        margin: 7px; 
+    }
+}
 
+@media screen and (max-width: 366px) {
+    .self {
+        margin: 20px;
+    }
+
+    .fingerprint {
+        top: -43vh;
+        left: 22vw; 
+    }
+
+    .location {
+        left: -75px;
+    }
+
+    .languages {
+        margin: 15px 0;
+    }
+
+    .experience {
+        top: -17vh;
+        margin: 0;
+    }
+
+    .skills {
+        margin: -130px 60px 25px 60px;
+    }
 }
