@@ -9,14 +9,20 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
+  containerList = [
+    'self-container',
+    'skills-container',
+    'location-container',
+    'languages-container',
+    'courses-container',
+    'experience-container',
+    'fingerprint-container',
+    'audio-container'
+  ]
+
   ngOnInit(){
-    this.makeElementDraggable('self-container');
-    this.makeElementDraggable('skills-container');
-    this.makeElementDraggable('location-container');
-    this.makeElementDraggable('languages-container');
-    this.makeElementDraggable('courses-container');
-    this.makeElementDraggable('experience-container');
-    this.makeElementDraggable('fingerprint-container');
+
+    this.containerList.forEach(this.makeElementDraggable);
 
     let progeressBar = document.getElementById('progress-bar');
     let backdrop = document.getElementById('backdrop');
