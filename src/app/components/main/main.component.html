@@ -5,10 +5,7 @@
     <div class="background">
         <div id="backdrop" class="backdrop">
             <div class="loading-bar">
-                <video id="progress-bar" src="../../../assets/videos/loading-bar.mp4" playsinline autoplay muted>
-                    <!-- <source src="../../../assets/videos/loading-bar.mp4" type="video/mp4">
-                    <source src="../../../assets/videos/loading-bar.webm" type="video/webm"> -->
-                </video>              
+                <div id="progress-bar" class="progress-bar"></div>
             </div>
         </div>
         <div id="self-container" class="container self" (click)="getToFront('self-container')">
@@ -36,16 +33,11 @@
                 </div>
             </div>
         </div>
-        <div id="skills-container" class="container skills" (click)="getToFront('skills-container')">
+        <div id="location-container" class="container location" (click)="getToFront('location-container')">
             <div class="content">
-                <div class="container-title">Skills</div>
-                <div class="skills-list">
-                    <div class="list-item">Web Development</div>
-                    <div class="list-item">Communication</div>
-                    <div class="list-item">Agile Workflow</div>
-                    <div class="list-item">Teamwork</div>
-                    <div class="list-item">Business Intelligence</div>
-                </div>
+                <div class="container-title">Location</div>
+                <img src="../../../assets/images/map.png">
+                <img class="location-animation" src="../../../assets/videos/loc-radar.gif">
             </div>
         </div>
         <div id="languages-container" class="container languages" (click)="getToFront('languages-container')">
@@ -63,11 +55,30 @@
                 </div>
             </div>
         </div>
-        <div id="location-container" class="container location" (click)="getToFront('location-container')">
+        <div id="experience-container" class="container experience" (click)="getToFront('experience-container')">
             <div class="content">
-                <div class="container-title">Location</div>
-                <img src="../../../assets/images/map.png">
-                <img class="location-animation" src="../../../assets/videos/loc-radar.gif">
+                <div class="container-title">Experience</div>
+                <div class="experience-list">
+                    <div class="list-item">Full Stack Developer</div>
+                    <div class="list-item">IDF</div>
+                    <div class="list-item">2021-2023</div>
+
+                    <div class="list-item">Data Analyst</div>
+                    <div class="list-item">IDF</div>
+                    <div class="list-item">2020-2021</div>
+                </div>
+            </div>
+        </div>
+        <div id="skills-container" class="container skills" (click)="getToFront('skills-container')">
+            <div class="content">
+                <div class="container-title">Skills</div>
+                <div class="skills-list">
+                    <div class="list-item">Web Development</div>
+                    <div class="list-item">Communication</div>
+                    <div class="list-item">Agile Workflow</div>
+                    <div class="list-item">Teamwork</div>
+                    <div class="list-item">Business Intelligence</div>
+                </div>
             </div>
         </div>
         <div id="courses-container" class="container courses" (click)="getToFront('courses-container')">
@@ -91,20 +102,20 @@
                 </div>
             </div>
         </div>
-        <div id="experience-container" class="container experience" (click)="getToFront('experience-container')">
-            <div class="content">
-                <div class="container-title">Experience</div>
-                <div class="experience-list">
-                    <div class="list-item">Full Stack Developer</div>
-                    <div class="list-item">IDF</div>
-                    <div class="list-item">2021-2023</div>
 
-                    <div class="list-item">Data Analyst</div>
-                    <div class="list-item">IDF</div>
-                    <div class="list-item">2020-2021</div>
+        <div id="fingerprint-container" class="container fingerprint" (click)="getToFront('fingerprint-container')">
+            <div class="content">
+                <div class="container-title">Fingerprint</div>
+                <div class="fingerprint-content">
+                    <img src="../../../assets/images/fingerprint.png">
                 </div>
             </div>
         </div>
+
+        <!-- finger print cotainer -->
+
+        <!-- voice detection cotainer -->
+
     </div>
 </body>
 

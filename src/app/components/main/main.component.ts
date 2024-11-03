@@ -16,21 +16,19 @@ export class MainComponent {
     this.makeElementDraggable('languages-container');
     this.makeElementDraggable('courses-container');
     this.makeElementDraggable('experience-container');
+    this.makeElementDraggable('fingerprint-container');
 
-    var loadingVideo = document.querySelector('video');
-    loadingVideo!.muted = true;
-    loadingVideo!.play()
-
-
-    let video = document.getElementById('progress-bar');
+    let progeressBar = document.getElementById('progress-bar');
     let backdrop = document.getElementById('backdrop');
 
-    video?.addEventListener('ended', function() {
+    progeressBar?.addEventListener('animationend', function() {
+      console.log('blabla');
       setTimeout(function() {
-        video!.className = "hidden";
-      }, 10)
+        progeressBar!.className = "hidden";
+      }, 30)
       setTimeout(function() {
         backdrop!.className = "hidden";
+        backdrop!.style.display = "none";
       }, 300)
     })
   }
