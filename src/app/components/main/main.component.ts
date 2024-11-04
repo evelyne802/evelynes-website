@@ -28,7 +28,6 @@ export class MainComponent {
     let backdrop = document.getElementById('backdrop');
 
     progeressBar?.addEventListener('animationend', function() {
-      console.log('blabla');
       setTimeout(function() {
         progeressBar!.className = "hidden";
       }, 30)

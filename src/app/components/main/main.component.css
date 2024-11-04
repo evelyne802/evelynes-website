@@ -1,5 +1,4 @@
 .background {
-    /* background: url('../../../assets/images/board.jpg');*/
     background-image: url('../../../assets/images/screen.jpg'); 
     height: 100%;
     width: 100%;
@@ -34,12 +33,17 @@
 
 .progress-bar {
     width:700px;
-    height:20px;
-    border-radius: 8px;
-    border: 1px solid #101010;
+    height:25px;
+    border: 4px solid #101010;
      background:
-     repeating-linear-gradient(135deg, var(--secondary-color) 0 10px, #101010 0 20px) 0/0%   no-repeat,
-     repeating-linear-gradient(135deg,#101010   0 10px,#101010   0 20px) 0/100%;
+     repeating-linear-gradient(
+      150deg,
+      #ffffffa3 0 5px,
+      #101010 0 10px) 0/0% no-repeat,
+    repeating-linear-gradient(
+      150deg,
+      #2e2e2e 0 5px,
+      #101010 0 10px) 0/100%;
     animation:progress 3s forwards;
   }
   @keyframes progress {
@@ -306,7 +310,17 @@
     100% { opacity: 1; }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
+    .background {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .backdrop {
+        height: 100vh;
+    }
+
     .location {
         width: 10rem;
         height: 24rem;
@@ -321,6 +335,23 @@
     .location-animation {
         top: 125px !important;
         left: 35px !important;
+    }
+
+    .fingerprint {
+        width: 8rem;
+        height: 10rem;
+    }
+
+    .fingerprint img {
+        height: 5rem;
+    }
+
+    .audio {
+        width: 25rem;
+    }
+
+    .audio img {
+        height: 5rem;
     }
 
     /* .skills{
@@ -355,7 +386,7 @@
     }
 
     .progress-bar {
-        width: 60vw;
+        width: 70vw;
     }
 
     .container{
