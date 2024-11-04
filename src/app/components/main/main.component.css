@@ -315,17 +315,25 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        height: fit-content;
+        min-height: 100vh;
     }
 
     .backdrop {
         height: 100vh;
     }
 
+    .container{
+        position: relative;
+    }
+
     .location {
         width: 10rem;
         height: 24rem;
-        left: 7vw;
+        left: 0;
+        top: 0;
         margin: 15px;
+        order: 2;
     }
 
     .location img {
@@ -338,41 +346,129 @@
     }
 
     .fingerprint {
+        left: 0;
+        top: 0;
         width: 8rem;
         height: 10rem;
+        order:5;
+        margin: 15px;
     }
 
     .fingerprint img {
         height: 5rem;
     }
 
+    .languages {
+        left: 0;
+        top: 0;
+        margin: 115px 20px;
+        order: 0;
+    }
+
     .audio {
+        left: 0;
+        top: 0;
         width: 25rem;
+        order: 6;
+        margin: 20px;
     }
 
     .audio img {
         height: 5rem;
     }
 
-    /* .skills{
-        left: 27vw;
+    .skills{
+        left: 0;
+        top: 0;
+        order: 3;
+        margin: 65px 15px;
     }
 
     .self {
-        left: 29vw;
+        left: 0;
+        top: 0;
+        margin: 30px 10px;
+        order: 1;
     }
 
     .courses {
-        left: 57vw;
+        left: 0;
+        top: 0;
+        order: 7;
+        margin-bottom: 20px;
     }
 
     .experience {
-        left: 58vw;
-    } */
-
+        left: 0;
+        top: 0;
+        order: 4;
+        margin: 0 20px;
+    }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1045px) {
+    .courses {
+        margin-top: -70px;
+    }
+
+    .experience {
+        margin: 45px 20px;
+    }
+}
+
+@media screen and (max-width: 867px) {
+    .courses {
+        margin-top: -70px;
+    }
+
+    .experience {
+        margin: 45px 20px;
+    }
+
+    .audio {
+        margin: -100px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .courses {
+        margin: 20px;
+    }
+
+    .experience {
+        margin: 30px;
+    }
+
+    .audio {
+        margin: 20px;
+    }
+
+    .fingerprint {
+        margin-top: -130px;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .fingerprint {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .self, .location, .experience, .audio, .fingerprint, .courses, .skills, .languages {
+        order: 0;
+    }
+
+    .fingerprint {
+        margin-top: 25px;
+    }
+
+    .languages, .skills {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 499px) {
     .background {
         background-image: url('../../../assets/images/s-screen.png'); 
         display: flex;
@@ -398,16 +494,12 @@
     }
 
     .self {
-        top: 0;
-        left: 0;
         margin: 40px;
     }
 
     .location {
         width: 7rem;
         height: 18rem;
-        top: 0;
-        left: 0;
         margin: 10px;
     }
 
@@ -423,26 +515,20 @@
     .languages {
         width: 15rem;
         height: 10rem;
-        top: 0;
-        left: 0;
+        margin:0;
     }
 
     .courses {
         width: 18rem;
         height: 16.2rem;
-        top: 0;
-        left: 0;
         animation-delay: 1.8s;
         margin: 25px 0;
-
     }
 
     .experience {
         width: 17rem;
         height: 8.9rem;
         animation-delay: 2s;
-        top: 0;
-        left: 0;
         margin: -90px 50px;
     }
 
@@ -455,8 +541,6 @@
     }
 
     .skills {
-        top: 0;
-        left: 0;
         margin: 75px 60px 25px 60px;
     }
 
@@ -465,6 +549,7 @@
         height: 10rem;
         top: -13vh;
         left: 14vw;
+        margin-top: 0;
     }
 
     .fingerprint img {
@@ -473,8 +558,6 @@
 
     .audio {
         width: 25rem;
-        right: 0;
-        top:0;
     }
 
     .audio img {
