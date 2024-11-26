@@ -444,7 +444,7 @@
     }
 
     .fingerprint {
-        margin-top: -130px;
+        margin-top: 0;
     }
 }
 
@@ -454,7 +454,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 605px) {
     .self, .location, .experience, .audio, .fingerprint, .courses, .skills, .languages {
         order: 0;
     }
@@ -465,6 +465,13 @@
 
     .languages, .skills {
         margin: 20px;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .fingerprint{
+        margin-top: -205px;
+        margin-left: 135px;
     }
 }
 
@@ -550,6 +557,7 @@
         top: -13vh;
         left: 14vw;
         margin-top: 0;
+        margin-left: 0;
     }
 
     .fingerprint img {
@@ -561,13 +569,32 @@
     }
 
     .audio img {
-        height: 5rem;
+        height: 4.5rem;
+    }
+
+    .audio span {
+        text-align: center;
+        font-size: 0.77rem;
     }
 }
+
 
 @media screen and (max-width: 390px) {
     .location {
         margin: 7px; 
+    }
+
+    .audio img {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 382.5px) {
+
+    .fingerprint{
+        margin: 15px 65px 105px 0px;
+        top: 0;
+        left: 0;
     }
 }
 
@@ -577,7 +604,7 @@
     }
 
     .fingerprint {
-        top: -43vh;
+        top: -55vh;
         left: 22vw; 
     }
 
