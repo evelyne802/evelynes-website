@@ -17,7 +17,8 @@ export class MainComponent {
     'courses-container',
     'experience-container',
     'fingerprint-container',
-    'audio-container'
+    'audio-container',
+    'projects-container'
   ]
 
   ngOnInit(){

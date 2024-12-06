@@ -120,7 +120,7 @@
     width: 18rem;
     height: 21.1rem;
     top: 13vh;
-    left: 24vw;
+    left: 23vw;
     animation-delay: 0.4s;
 }
 
@@ -156,14 +156,34 @@
     margin: 0 3px;
 }
 
+/********* projects container *********/
+
+.projects {
+    width: 17rem;
+    height: 11rem;
+    top: 31vh;
+    right: 35vw;
+    animation-delay: 0.6s;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    position: relative;
+    margin: 10px auto;
+}
+
+
 /********* location container *********/
 
 .location {
     width: 13rem;
     height: 30rem;
-    top: 8vh;
-    left: 6vw;
-    animation-delay: 0.6s;
+    top: 11vh;
+    left: 5vw;
+    animation-delay: 0.8s;
 }
 
 .location img {
@@ -183,17 +203,19 @@
 
 .skills {
     width: 15rem;
-    height: 10.3rem;
+    height: 11.5rem;
     top: 12vh;
     right: 5vw;
-    animation-delay: 0.8s;
+    animation-delay: 1s;
 }
 
 .skills-list {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
+    position: relative;
+    margin: 10px auto;
 }
 
 /********* languages container *********/
@@ -201,9 +223,9 @@
 .languages {
     width: 15rem;
     height: 9.85rem;
-    top: 63vh;
-    right: 15vw;
-    animation-delay: 1s;
+    top: 40vh;
+    right: 14vw;
+    animation-delay: 1.2s;
 }
 
 .languages-list {
@@ -221,8 +243,8 @@
     width: 20rem;
     height: 14rem;
     top: 64vh;
-    left: 42vw;
-    animation-delay: 1.2s;
+    left: 36vw;
+    animation-delay: 1.4s;
 }
 
 .courses-list {
@@ -239,8 +261,8 @@
     width: 25rem;
     height: 6.7rem;
     top: 9vh;
-    left: 48vw;
-    animation-delay: 1.4s;
+    left: 47vw;
+    animation-delay: 1.6s;
 }
 
 .experience-list {
@@ -258,7 +280,7 @@
     height: 12rem;
     top: 66vh;
     left: 22vw;
-    animation-delay: 1.6s;
+    animation-delay: 1.8s;
     padding: 3px;
 }
 
@@ -280,9 +302,9 @@
 .audio {
     width: 30rem;
     height: 11rem;
-    top: 31vh;
-    right: 23vw;
-    animation-delay: 1.8s;
+    top: 67vh;
+    right: 7vw;
+    animation-delay: 2s;
     padding: 3px;
 }
 
@@ -325,6 +347,12 @@
 
     .container{
         position: relative;
+    }
+
+    .projects {
+        left: 0;
+        top: 0;
+        order: 5;
     }
 
     .location {
@@ -406,9 +434,15 @@
     }
 }
 
+@media screen and (max-width: 1064px) {
+    .skills {
+        margin: -40px 15px;
+    }
+}
+
 @media screen and (max-width: 1045px) {
     .courses {
-        margin-top: -70px;
+        margin-top: 0;
     }
 
     .experience {
@@ -416,36 +450,72 @@
     }
 }
 
-@media screen and (max-width: 867px) {
-    .courses {
-        margin-top: -70px;
-    }
 
-    .experience {
-        margin: 45px 20px;
-    }
-
-    .audio {
-        margin: -100px 20px 20px 20px;
-    }
-}
-
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 794px) {
     .courses {
         margin: 20px;
     }
 
     .experience {
-        margin: 30px;
+        margin: 0px;
+        order: 3;
     }
 
     .audio {
-        margin: 20px;
+        margin: -135px 20px 20px 300px;
     }
 
     .fingerprint {
-        margin-top: 0;
+        margin-top: -100px;
     }
+
+    .skills {
+        margin: -75px 15px;
+        order:5;
+    }
+
+    .location {
+        margin: -70px 15px;
+    }
+
+    .projects {
+        margin: 95px 0px 0px 0px;
+        order: 4;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .projects {
+        margin: 30px 0;
+        order: 3;
+    }
+
+    .fingerprint {
+        margin-top: 0px;
+    }
+
+    .experience {
+        margin: 95px 0px 30px 0px;
+        order: 3;
+    }
+
+    .skills {
+        margin: 30px 0px;
+        order: 3;
+    }
+
+    .audio, .projects{
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .skills {
+        margin: 0px 0px 25px 0px;;
+    }           
+    .projects {
+        margin: 60px 0 10px 0;
+    }    
 }
 
 @media screen and (max-width: 618px) {
@@ -455,16 +525,24 @@
 }
 
 @media screen and (max-width: 605px) {
-    .self, .location, .experience, .audio, .fingerprint, .courses, .skills, .languages {
+    .self, .location, .experience, .audio, .fingerprint, .courses, .skills, .languages, .projects {
         order: 0;
     }
 
-    .fingerprint {
-        margin-top: 25px;
+    .fingerprint, .projects {
+        margin: 0;
+    }
+
+    .location {
+        margin: 10px;
     }
 
     .languages, .skills {
         margin: 20px;
+    }
+
+    .experience {
+        margin: 20px 0px 10px 0px;
     }
 }
 
@@ -472,6 +550,10 @@
     .fingerprint{
         margin-top: -205px;
         margin-left: 135px;
+    }
+
+    .location {
+        margin: 15px;
     }
 }
 
@@ -536,7 +618,7 @@
         width: 17rem;
         height: 8.9rem;
         animation-delay: 2s;
-        margin: -90px 50px;
+        margin: 20px 0px 10px 0px;
     }
 
     .experience-list {
@@ -548,15 +630,15 @@
     }
 
     .skills {
-        margin: 75px 60px 25px 60px;
+        margin: 15px;
     }
 
     .fingerprint {
         width: 8rem;
         height: 10rem;
-        top: -13vh;
-        left: 14vw;
-        margin-top: 0;
+        top: 0;
+        left: 0;
+        margin-top: 25px;
         margin-left: 0;
     }
 
@@ -576,6 +658,27 @@
         text-align: center;
         font-size: 0.77rem;
     }
+
+    .projects {
+        margin: -80px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .projects {
+        margin: 10px;
+    }
+
+    .languages {
+        margin: 55px 0;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .fingerprint {
+        margin-top: 0px;
+    }
+
 }
 
 
@@ -598,7 +701,7 @@
     }
 }
 
-@media screen and (max-width: 366px) {
+@media screen and (max-width: 368px) {
     .self {
         margin: 20px;
     }
@@ -606,6 +709,7 @@
     .fingerprint {
         top: -55vh;
         left: 22vw; 
+        margin:0;
     }
 
     .location {
@@ -616,12 +720,11 @@
         margin: 15px 0;
     }
 
-    .experience {
-        top: -17vh;
-        margin: 0;
+    .projects {
+        margin-top: -150px;
     }
 
-    .skills {
-        margin: -130px 60px 25px 60px;
+    .audio {
+        width: 20.5rem;
     }
 }
