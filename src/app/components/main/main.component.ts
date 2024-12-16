@@ -27,6 +27,7 @@ export class MainComponent {
 
     let progeressBar = document.getElementById('progress-bar');
     let backdrop = document.getElementById('backdrop');
+    let background = document.getElementById('background');
 
     progeressBar?.addEventListener('animationend', function() {
       setTimeout(function() {
@@ -35,6 +36,7 @@ export class MainComponent {
       setTimeout(function() {
         backdrop!.className = "hidden";
         backdrop!.style.display = "none";
+        background!.style.position = "absolute";
       }, 300)
     })
   }

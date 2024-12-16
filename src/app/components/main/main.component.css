@@ -2,7 +2,7 @@
     background-image: url('../../../assets/images/screen.jpg'); 
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     background-size: cover;
     left: 0;
     top: 0;
@@ -672,6 +672,13 @@
     .languages {
         margin: 55px 0;
     }
+}
+
+@media screen and (max-width: 436px) {
+    .audio {
+        width: 22rem;
+    }
+
 }
 
 @media screen and (max-width: 436px) {
