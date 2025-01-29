@@ -160,9 +160,10 @@
 
 .projects {
     width: 17rem;
-    height: 11rem;
+    height: 12.7rem;
     top: 31vh;
     right: 35vw;
+    margin-bottom: 20px;
     animation-delay: 0.6s;
 }
 
@@ -462,25 +463,35 @@
     }
 
     .audio {
-        margin: -135px 20px 20px 300px;
+        margin: 20px;
     }
 
     .fingerprint {
-        margin-top: -100px;
+        margin-top: -30px;
     }
 
     .skills {
-        margin: -75px 15px;
+        margin: 20px 15px 15px -54px;;
         order:5;
     }
 
     .location {
-        margin: -70px 15px;
+        margin: 80px 15px 0px 15px;
     }
 
     .projects {
-        margin: 95px 0px 0px 0px;
+        margin: 55px 0px 0px 0px;
         order: 4;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .location{
+        margin:-70px 15px 0px 15px;
+    }
+
+    .fingerprint {
+        margin-top: -170px;
     }
 }
 
@@ -548,8 +559,7 @@
 
 @media screen and (max-width: 514px) {
     .fingerprint{
-        margin-top: -205px;
-        margin-left: 135px;
+        margin-top: 10px;
     }
 
     .location {
@@ -674,16 +684,14 @@
     }
 }
 
+
 @media screen and (max-width: 436px) {
     .audio {
         width: 22rem;
     }
 
-}
-
-@media screen and (max-width: 436px) {
     .fingerprint {
-        margin-top: 0px;
+        margin: -60px 0px 15px 90px;
     }
 
 }
@@ -702,7 +710,6 @@
 @media screen and (max-width: 382.5px) {
 
     .fingerprint{
-        margin: 15px 65px 105px 0px;
         top: 0;
         left: 0;
     }
@@ -714,13 +721,9 @@
     }
 
     .fingerprint {
-        top: -55vh;
-        left: 22vw; 
-        margin:0;
-    }
-
-    .location {
-        left: -75px;
+        top: -20vh;
+        left: 10vw;
+        margin: 35px;
     }
 
     .languages {
@@ -734,4 +737,17 @@
     .audio {
         width: 20.5rem;
     }
+}
+
+@media screen and (max-width: 366px) {
+    .fingerprint {
+        top:0;
+        left: 10px;
+        margin: 30px;
+    }
+
+    .projects {
+        margin-top: 0;
+    }
+
 }
